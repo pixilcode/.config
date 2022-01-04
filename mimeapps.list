@@ -1,0 +1,14 @@
+[Added Associations]
+text/markdown=emacs.desktop;
+application/pdf=firefox.desktop;org.gnome.Evince.desktop;
+text/plain=xed.desktop;
+x-scheme-handler/http=org.gnome.Epiphany.desktop;
+x-scheme-handler/https=org.gnome.Epiphany.desktop;
+text/html=org.gnome.Epiphany.desktop;
+application/xhtml+xml=org.gnome.Epiphany.desktop;
+
+[Default Applications]
+x-scheme-handler/http=org.gnome.Epiphany.desktop
+x-scheme-handler/https=org.gnome.Epiphany.desktop
+text/html=org.gnome.Epiphany.desktop
+application/xhtml+xml=org.gnome.Epiphany.desktop
