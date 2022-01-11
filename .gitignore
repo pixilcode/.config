@@ -39,4 +39,8 @@ wofi/
 xed/
 VSCodium/
 gpicview/
+user-dirs.locale
+user-dirs.dirs
+rstudio/*
+EOS-greeter.conf
 
