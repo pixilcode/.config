@@ -15,7 +15,3 @@ output * bg `find $wallpapers_path -type f | shuf -n 1` fill
 
 # change the caps lock key to a super key
 input "type:keyboard" xkb_options caps:super
-
-# set the terminal
-set $term nu
-#bindsym $mod+Return exec $term

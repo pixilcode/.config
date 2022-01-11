@@ -8,7 +8,7 @@ set $up k
 set $right l
 
 # Your preferred terminal emulators
-set $term-float xfce4-terminal -x nu
+set $term-float alacritty -e nu
 
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
@@ -99,7 +99,8 @@ exec swayidle -w\
     bindsym $mod+0 workspace number 10
     # Move focused container to workspace
     bindsym $mod+Shift+1 move container to workspace number 1
-    bindsym $mod+Shift+2 move container to workspace number 2
+    bindsym $mod+Shift+2 exec notify-send "Hey!"
+    #bindsym $mod+Shift+2 move container to workspace number 2
     bindsym $mod+Shift+3 move container to workspace number 3
     bindsym $mod+Shift+4 move container to workspace number 4
     bindsym $mod+Shift+5 move container to workspace number 5
@@ -181,9 +182,9 @@ bindsym --whole-window --border $mod+shift+button5 resize grow width 5 px or 5 p
 #
 # Volume
 #
-    bindsym --locked XF86AudioRaiseVolume exec pamixer -ui 2
-    bindsym --locked XF86AudioLowerVolume exec pamixer -ud 2
-    bindsym --locked XF86AudioMute exec pamixer -t
+    bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+    bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+    bindsym --locked XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
 #
 # Player
 #
@@ -196,6 +197,8 @@ bindsym --whole-window --border $mod+shift+button5 resize grow width 5 px or 5 p
 #
     bindsym XF86MonBrightnessUp exec brightnessctl -c backlight set +5%
     bindsym XF86MonBrightnessDown exec brightnessctl -c backlight set 5%-
+    bindsym $mod+Shift+period exec brightnessctl -c backlight set +5%
+    bindsym $mod+Shift+comma exec brightnessctl -c backlight set 5%-
 #
 # App shortcuts
 #

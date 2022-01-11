@@ -4,6 +4,7 @@
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'edwinb/idris2-vim'
+Plug 'mattn/emmet-vim'
 
 call plug#end()
 
