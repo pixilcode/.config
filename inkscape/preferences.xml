@@ -30,7 +30,7 @@
        state="1" />
     <group
        id="rulers"
-       state="1" />
+       state="0" />
     <group
        id="scrollbars"
        state="1" />
@@ -103,10 +103,10 @@
      id="template">
     <sodipodi:namedview
        id="base"
-       pagecolor="#505050"
+       pagecolor="#ffffff"
        pageopacity="0"
        pagecheckerboard="0"
-       bordercolor="#eeeeee"
+       bordercolor="#999999"
        borderopacity="1"
        objecttolerance="10.0"
        gridtolerance="10.0"
@@ -125,8 +125,8 @@
          id="rect"
          style="fill:blue;"
          usecurrent="1"
-         width="526.756"
-         height="271.63" />
+         width="74.9999976377957"
+         height="99.9999992533531" />
       <eventcontext
          id="3dbox"
          style="stroke:none;stroke-linejoin:round;"
@@ -162,8 +162,8 @@
          end="0"
          start="0"
          usecurrent="1"
-         rx="15.9045"
-         ry="39.6933" />
+         rx="67.4999978740161"
+         ry="67.4999978740161" />
       <eventcontext
          id="star"
          magnitude="12"
@@ -210,8 +210,8 @@
        usepressure="1"
        usetilt="0"
        keep_selected="1"
-       abs_width="1"
-       unit="mm">
+       abs_width="0"
+       unit="px">
       <group
          id="preset">
         <group
@@ -342,8 +342,8 @@
        live_outline="1"
        live_objects="1"
        show_helperpath="0"
-       x="1503.75"
-       y="1483.06"
+       x="74.657819348942"
+       y="44.7438324526588"
        edit_clipping_paths="0"
        edit_masks="0" />
     <eventcontext
@@ -415,6 +415,13 @@
          x="256"
          y="0" />
     </group>
+    <eventcontext
+       id="marker"
+       selcue="1"
+       gradientdrag="1" />
+    <group
+       id="geometric"
+       mode="drag" />
   </group>
   <group
      id="palette">
@@ -535,7 +542,8 @@
   </group>
   <group
      id="colorselector"
-     page="2" />
+     page="2"
+     switcher="1" />
   <group
      id="embedded">
     <group
@@ -548,7 +556,8 @@
        panel_border="0" />
   </group>
   <group
-     id="dialogs">
+     id="dialogs"
+     traceliveUpdate="1">
     <group
        id="toolbox" />
     <group
@@ -564,7 +573,8 @@
        rotateCounterClockwise="1" />
     <group
        id="align"
-       align-to="4" />
+       align-to="4"
+       objects-align-to="page" />
     <group
        id="xml"
        h="500"
@@ -591,19 +601,23 @@
        id="export"
        default=""
        append_extension="1"
-       path="">
+       path=""
+       defaultopts="1">
       <group
          id="exportarea"
-         value="page" />
+         value="drawing" />
       <group
          id="defaultxdpi" />
+      <group
+         id="batchexportarea"
+         value="layer" />
     </group>
     <group
        id="save_as"
        default="org.inkscape.output.svg.inkscape"
        append_extension="1"
        enable_preview="1"
-       path="/home/brendonb/Documents/classes/new-testament/study-journal/assets/img"
+       path="/home/brendonb/Documents/classes/rel212/final-project/assets"
        use_current_dir="1" />
     <group
        id="save_copy"
@@ -614,11 +628,11 @@
     <group
        id="open"
        enable_preview="1"
-       path="/home/brendonb/Pictures/deviant-art/pixilcode/" />
+       path="/home/brendonb/Downloads/" />
     <group
        id="import"
        enable_preview="1"
-       path="/home/brendonb/Documents/classes/new-testament/"
+       path="/home/brendonb/Downloads/"
        ask="1"
        ask_svg="1"
        link="embed"
@@ -629,9 +643,11 @@
        id="debug"
        redirect="0" />
     <group
-       id="clonetiler" />
+       id="clonetiler"
+       dotrace="0" />
     <group
-       id="gridtiler" />
+       id="gridtiler"
+       SpacingType="20" />
     <group
        id="extension-error"
        show-on-startup="0" />
@@ -677,6 +693,7 @@
   </group>
   <group
      id="options"
+     rotationlock="1"
      onimport="0">
     <group
        id="renderingcache"
@@ -856,7 +873,8 @@
     <group
        id="maskobject"
        topmost="1"
-       remove="1" />
+       remove="1"
+       grouping="0" />
     <group
        id="blurquality"
        value="0" />
@@ -945,26 +963,64 @@
        partialdynamic="0" />
     <group
        id="boot"
-       canvas="dark"
-       theme="compacted">
+       theme="classic"
+       canvas="light">
       <group
          id="shown"
-         ver1.1.1="1" />
+         ver1.1.1="1"
+         ver1.1.2="1"
+         ver1.2.1="1"
+         ver1.2.2="1" />
     </group>
     <group
        id="rendering" />
     <group
        id="font"
        unitType="2" />
+    <group
+       id="snapping"
+       snap-global-toggle="0"
+       snap-bbox="1"
+       snap-bbox-edge="1"
+       snap-bbox-corner="1"
+       snap-bbox-edge-midpoint="0"
+       snap-bbox-center="0"
+       simple-snap-bbox="1"
+       snap-others="1"
+       snap-object-midpoint="0"
+       snap-rotation-center="0"
+       snap-text-baseline="1"
+       snap-path-mask="1"
+       snap-path-clip="1"
+       snap-page-border="1"
+       snap-grid="1"
+       snap-guide="1"
+       snap-node-category="1"
+       snap-path="1"
+       snap-path-intersection="0"
+       snap-node-cusp="1"
+       snap-node-smooth="1"
+       snap-line-midpoint="1"
+       snap-line-tangential="0"
+       snap-line-perpendicular="0"
+       simple-snap-nodes="1"
+       snap-alignment="0"
+       snap-alignment-self="0"
+       snap-distribution="0"
+       simple-snap-alignment="0" />
   </group>
   <group
-     id="extensions" />
+     id="extensions"
+     org.inkscape.output.png.inkscape.png_bitdepth="99"
+     org.inkscape.output.png.inkscape.png_compression="6"
+     org.inkscape.output.png.inkscape.png_antialias="2"
+     org.inkscape.raster.jpg_output.tab="about" />
   <group
      id="desktop"
-     style="fill:#0088aa;stroke-linecap:round;-inkscape-font-specification:'AR PL New Kai';font-family:'AR PL New Kai';font-size:466.66666667px;stroke-linejoin:round">
+     style="fill:#000000;stroke-linecap:round;-inkscape-font-specification:'AR PL New Kai';font-family:'AR PL New Kai';font-size:466.66666667px;stroke-linejoin:round;stroke:#ff0000;stroke-width:1.005">
     <group
-       width="640"
-       height="480"
+       width="1916"
+       height="1011"
        x="0"
        y="0"
        maximized="1"
@@ -989,11 +1045,20 @@
      id="toolbox"
      icononly="1"
      secondary="1"
+     simplesnap="0"
      small="1">
     <group
        id="tools"
        icononly="1"
-       small="1" />
+       small="0"
+       iconsize="16"
+       width="26">
+      <group
+         id="buttons" />
+    </group>
+    <group
+       id="controlbars"
+       iconsize="16" />
   </group>
   <group
      id="iconpreview"
@@ -1069,21 +1134,22 @@
   <group
      id="theme"
      defaultPreferDarkTheme="0"
-     defaultGtkTheme="Arc-Dark"
      defaultIconTheme="Arc-X-D"
-     symbolicIcons="1"
-     preferDarkTheme="1"
-     darkTheme="1"
+     defaultGtkTheme="Arc-Dark"
+     narrowSpinButton="1"
+     preferDarkTheme="0"
+     darkTheme="0"
+     symbolicIcons="0"
      symbolicDefaultBaseColors="1"
      symbolicDefaultHighColors="1"
-     gtkTheme="Minwaita-Inkscape"
-     iconTheme="hicolor"
      menuIcons_canvas="0"
      menuIcons_layers="0"
-     menuIcons_objects="0">
+     menuIcons_objects="0"
+     gtkTheme="Adwaita"
+     iconTheme="Adwaita">
     <group
        id="multicolor"
-       symbolicBaseColor="3857049087"
+       symbolicBaseColor="255"
        symbolicSuccessColor="3435973887"
        symbolicWarningColor="2155905279"
        symbolicErrorColor="2155905279" />
@@ -1097,4 +1163,9 @@
   <group
      id="live_effects"
      flattening="0" />
+  <group
+     id="statusbar">
+    <group
+       id="visibility" />
+  </group>
 </inkscape>

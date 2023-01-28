@@ -11,6 +11,7 @@ startup = [
     "alias cs260server = ssh brendonb@64.227.6.254",
     "def class [name: string] { let dir = (echo [ '/home/brendonb/Documents/classes' $name ] | path join); cd $dir }",
     "def 'class list' [] { ls '/home/brendonb/Documents/classes' | get name | path basename }",
-    "def 'class id' [id: int] { let class = (class list | nth $id); class $class }"
+    "def 'class id' [id: int] { let class = (class list | nth $id); class $class }",
+    "def md2pdf [input: path, output: path] { pandoc $input --output $output --from markdown --to pdf }"
 ]
 table_mode = "compact"

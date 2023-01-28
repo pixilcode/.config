@@ -3,14 +3,17 @@
 # daemonize
 indicator-caps-lock
 # datestr=%A
-image=$HOME/.config/sway/swaylock.png
+image=$HOME/Pictures/backgrounds/Derpy.jpg
 scaling=fill
 font=UbuntuMono
 font-size=20
 
 # Ring
-indicator-radius=115
+indicator-radius=137
+indicator-x-position=661
+indicator-y-position=438
 # line-uses-ring
+# TODO: change these colors to match the background better
 line-color=#3b4252
 text-color=#d8dee9
 inside-color=#2e344098

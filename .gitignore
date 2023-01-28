@@ -35,7 +35,6 @@ nvim/plugged
 Google/
 RStudio/
 systemd/
-wofi/
 xed/
 VSCodium/
 gpicview/
@@ -43,4 +42,17 @@ user-dirs.locale
 user-dirs.dirs
 rstudio/*
 EOS-greeter.conf
+Android Open Source Project/
+QtProject.conf
+cef_user_data/
+coc/
+flutter/
+JetBrains/
+tool_state
+settings
+racket/
+pix/
+vlc/
+jxbrowser/
+nushell/history.txt
 

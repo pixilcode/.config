@@ -1,11 +1,16 @@
 [Added Associations]
 text/markdown=emacs.desktop;
-application/pdf=firefox.desktop;org.gnome.Evince.desktop;
+application/pdf=org.gnome.Evince.desktop;firefox.desktop;
 text/plain=xed.desktop;
 x-scheme-handler/http=org.gnome.Epiphany.desktop;
 x-scheme-handler/https=org.gnome.Epiphany.desktop;
 text/html=org.gnome.Epiphany.desktop;
 application/xhtml+xml=org.gnome.Epiphany.desktop;
+application/zip=org.gnome.FileRoller.desktop;
+text/x-chdr=nvim.desktop;
+image/jpeg=pix.desktop;
+text/x-makefile=xed.desktop;
+image/png=pix.desktop;
 
 [Default Applications]
 x-scheme-handler/http=org.gnome.Epiphany.desktop

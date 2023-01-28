@@ -1,0 +1,6 @@
+theme = "everforest_light"
+
+[editor]
+shell = ["nu", "-c"]
+bufferline = "multiple"
+
