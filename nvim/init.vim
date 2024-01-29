@@ -113,6 +113,16 @@ noremap <leader>w :bn<CR>
 let g:elm_format_autosave = 1
 let g:elm_syntastic_show_warnings = 1
 
+" netrw settings
+" 1) Make vertical splitting the default for previewing files
+" 2) Make the default listing style 'tree'
+" 3) When a vertical preview window is opened, the directory
+"    listing will use only 30% of the columns available; the
+"    rest of the window is used for the preview window
+let g:netrw_preview = 1
+let g:netrw_liststyle = 3
+let g:netrw_winsize = 30
+
 " === CoC SETTINGS ===
 " (see https://github.com/neoclide/coc.nvim#example-vim-configuration)
 
