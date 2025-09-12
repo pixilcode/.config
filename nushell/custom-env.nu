@@ -1,20 +1,8 @@
-# Set up opam
-let-env OPAM_SWITCH_PREFIX = $"($env.HOME)/.opam/default"
-let-env CAML_LD_LIBRARY_PATH = $"($env.HOME)/.opam/default/lib/stublibs:/usr/lib/ocaml/stublibs:/usr/lib/ocaml"
-let-env OCAML_TOPLEVEL_PATH = $"($env.HOME)/.opam/default/lib/toplevel"
-
 # Path variable
-let-env PATH = (
+let paths_to_append = open $"($env.HOME)/.config/path" | lines | str replace "HOME" $env.HOME
+$env.PATH = (
   $env.PATH
-  | append $"($env.HOME)/.local/bin"
-  | append $"($env.HOME)/.cabal/bin"
-  | append $"($env.HOME)/.ghcup/bin"
-  | append $"($env.HOME)/.local/bin/clion-2022.2.1/bin"
-  | append $"($env.HOME)/.local/bin/idea-IU-223.8214.52/bin"
-  | append $"($env.HOME)/.opam/default/bin"
-  | append $"($env.HOME)/.cargo/bin"
+  | append $paths_to_append
 )
 
-let-env EDITOR = "helix"
-let-env SHELL = "/usr/bin/nu"
-
+$env.EDITOR = "nvim"

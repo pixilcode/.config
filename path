@@ -1,0 +1,9 @@
+HOME/.local/bin
+HOME/.cabal/bin
+HOME/.ghcup/bin
+HOME/.local/bin/clion-2022.2.1/bin
+HOME/.local/bin/idea-IU-223.8214.52/bin
+HOME/.opam/default/bin
+HOME/.cargo/bin
+HOME/.nimble/bin
+/usr/local/texlive/2024/bin/x86_64-linux

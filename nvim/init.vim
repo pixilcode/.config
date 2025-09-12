@@ -4,7 +4,6 @@
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'edwinb/idris2-vim'
-Plug 'vim-syntastic/syntastic'
 Plug 'mattn/emmet-vim'
 Plug 'tpope/vim-sleuth'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -22,7 +21,7 @@ call plug#end()
 set nocompatible
 
 " set shell to nushell
-set shell=/usr/bin/nu
+" set shell=/usr/bin/nu
 
 " filetype detection
 filetype on
