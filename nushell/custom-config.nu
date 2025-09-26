@@ -13,6 +13,9 @@ alias find = fd
 # Read a file to the console
 alias cat = bat
 
+# A post-modern text editor
+alias hx = helix
+
 # Get the location of a class with the given name
 def class [name: string] {
     $"($env.HOME)/Documents/classes/($name)"
@@ -44,7 +47,7 @@ def opam-env [] {
     opam env
     | split row ';'
     | str trim
-    | filter { |row| $row | str contains '=' }
+    | where { |row| $row | str contains '=' }
     | split column '='
     | rename key value
     | each { |row| 
@@ -55,7 +58,7 @@ def opam-env [] {
 }
 
 # Load the opam environment
-opam-env | load-env
+# opam-env | load-env
 
 $env.config = (
     $env.config
@@ -70,15 +73,15 @@ $env.config = (
 #       The help message won't be overriden though, so it will still be present here
 
 def health_categories [] {
-    let languages = ^hx --health languages | detect columns | get Language | filter { $in != null }
+    let languages = ^helix --health languages | detect columns | get Language | where { $in != null }
     let completions = [ "all", "clipboard", "languages" ] | append $languages
     return $completions
 }
 
 def grammar_categories [] { ["fetch", "build"] }
 
-# A post-modern text editor.
-export extern hx [
+# A post-modern text editor
+export extern helix [
     --help(-h),                                 # Prints help information
     --tutor,                                    # Loads the tutorial
     --health: string@health_categories,         # Checks for potential errors in editor setup

@@ -99,8 +99,7 @@ exec swayidle -w\
     bindsym $mod+0 workspace number 10
     # Move focused container to workspace
     bindsym $mod+Shift+1 move container to workspace number 1
-    bindsym $mod+Shift+2 exec notify-send "Hey!"
-    #bindsym $mod+Shift+2 move container to workspace number 2
+    bindsym $mod+Shift+2 move container to workspace number 2
     bindsym $mod+Shift+3 move container to workspace number 3
     bindsym $mod+Shift+4 move container to workspace number 4
     bindsym $mod+Shift+5 move container to workspace number 5
@@ -202,7 +201,7 @@ bindsym --whole-window --border $mod+shift+button5 resize grow width 5 px or 5 p
 #
 # App shortcuts
 #
-    bindsym $mod+n exec thunar
+    bindsym $mod+n exec dolphin
     bindsym $mod+o exec firefox
 #
 # Screenshots

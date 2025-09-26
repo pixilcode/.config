@@ -11,7 +11,7 @@ include $HOME/.config/sway/config.d/*
 # set the wallpaper
 #output "*" bg ~/Pictures/backgrounds/Derpy.jpg fill
 set $wallpapers_path $HOME/Pictures/backgrounds
-output * bg `find $wallpapers_path -type f | shuf -n 1` fill
+#output * bg `find $wallpapers_path -type f | shuf -n 1` fill
 
 # change the caps lock key to a super key
 input "type:keyboard" xkb_options caps:super
