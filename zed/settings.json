@@ -7,11 +7,42 @@
 // custom settings, run `zed: open default settings` from the
 // command palette
 {
-  "ui_font_size": 16,
-  "buffer_font_size": 16,
   "theme": {
     "mode": "system",
     "light": "One Light",
     "dark": "One Dark"
+  },
+  "agent_servers": {},
+  "agent": {
+    "dock": "left",
+    "default_width": 600,
+    "play_sound_when_agent_done": true
+  },
+  "minimap": {
+    "show": "auto"
+  },
+  "helix_mode": true,
+  "ui_font_size": 14,
+  "buffer_font_size": 14,
+  "multi_cursor_modifier": "cmd_or_ctrl",
+  "project_panel": {
+    "default_width": 300,
+    "dock": "right"
+  },
+  "outline_panel": {
+    "default_width": 300,
+    "dock": "right"
+  },
+  "collaboration_panel": {
+    "button": false
+  },
+  "git_panel": {
+    "dock": "right"
+  },
+  "show_call_status_icon": false,
+  "terminal": {
+    "shell": {
+      "program": "/usr/bin/nu"
+    }
   }
 }

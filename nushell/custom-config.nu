@@ -5,7 +5,7 @@ alias v = nvim
 alias grep = rg
 
 # Search for a file
-alias fd = findfd
+#alias fd = findfd
 
 # Search for a file
 alias find = fd
@@ -50,7 +50,7 @@ def opam-env [] {
     | where { |row| $row | str contains '=' }
     | split column '='
     | rename key value
-    | each { |row| 
+    | each { |row|
         let value = ($row.value | str trim --char "'")
         { $row.key: $value }
     }
@@ -64,6 +64,9 @@ $env.config = (
     $env.config
     | upsert show_banner false
 )
+
+# setup zoxide
+source ~/.zoxide.generated.nu
 
 # Set custom completions for `helix`
 # Completions for Helix: <https://github.com/helix-editor/helix>
@@ -95,3 +98,6 @@ export extern helix [
     --working-dir(-w): glob,                    # Specify an initial working directory
     ...files: glob,                             # Sets the input file to use, position can also be specified via file[:row[:col]]
 ]
+
+# temp
+zeditor ~/.config/

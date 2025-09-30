@@ -5,4 +5,7 @@ $env.PATH = (
   | append $paths_to_append
 )
 
-$env.EDITOR = "nvim"
+$env.EDITOR = "helix"
+
+# generate zoxide config
+zoxide init nushell --cmd cd | save -f ~/.zoxide.generated.nu
