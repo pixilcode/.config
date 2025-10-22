@@ -44,5 +44,14 @@
     "shell": {
       "program": "/usr/bin/nu"
     }
+  },
+  "lsp": {
+    "rust-analyzer": {
+      "initialization_options": {
+        "check": {
+          "command": "clippy"
+        }
+      }
+    }
   }
 }

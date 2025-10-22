@@ -1,0 +1,10 @@
+# Halloy config.
+#
+# For a complete list of available options,
+# please visit https://halloy.chat/configuration/
+
+[servers.liberachat]
+nickname = "pixilcode"
+nick_password_file = "~/.config/halloy/nick_password"
+server = "irc.libera.chat"
+channels = ["#proglangdesign"]
