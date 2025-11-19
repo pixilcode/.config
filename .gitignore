@@ -1,7 +1,9 @@
 Code/
+Code - OSS/
 Cursor/
 TabNine/
 Thunar/
+audacity/
 comrak/
 dconf/
 diffuse/
@@ -15,8 +17,8 @@ goa-1.0/
 gtk-2.0/
 gtk-3.0/
 htop/
-mako/
 libreoffice/
+mako/
 marktext/
 neofetch/
 pavucontrol.ini
@@ -81,6 +83,7 @@ kded6rc
 kdedefaults/
 kdeglobals
 kglobalshortcutsrc
+kiorc
 knfsshare
 konsolerc
 konsolesshconfig

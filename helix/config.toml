@@ -1,4 +1,4 @@
-theme = "everforest_light"
+theme = "material_palenight"
 
 [editor]
 shell = ["nu", "-c"]

@@ -52,6 +52,33 @@
           "command": "clippy"
         }
       }
+    },
+    "nim": {
+      "settings": {
+        "autoCheckProject": true,
+        "checkOnSave": true,
+        "formatOnSave": true,
+        "projectMapping": [
+          {
+            "projectFile": "main.nim",
+            "fileRegex": ".*\\.nim"
+          },
+          {
+            "projectFile": "tests/all.nim",
+            "fileRegex": "tests/.*\\.nim"
+          }
+        ]
+      }
+    }
+  },
+  "languages": {
+    "Nim": {
+      "formatter": {
+        "external": {
+          "command": "nph",
+          "arguments": ["-"]
+        }
+      }
     }
   }
 }
