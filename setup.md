@@ -1,0 +1,31 @@
+- set up Git SSH/GPG
+  - `git config --global init.defaultBranch main`
+  - setup SSH with texttotypes server
+- login to Firefox
+- download .config
+- setup screenshot for sway
+  - `~/.config/sway/scripts/grimshot check`
+- install `pandoc`
+  - `yay -S pandoc-cli`
+  - install texlive
+    - `yay -S texlive-bin texlive-latexrecommended texlive-fontsrecommended`
+- install:
+  - nushell
+  - helix
+  - bat
+  - fd
+  - ripgrep
+  - zed
+  - just
+  - zoxide
+  - fzf
+- optional install:
+  - rust
+  - ocaml
+  - bun - curl -fsSL https://bun.com/install | bash
+  - nim - yay -S choosenim-bin; choosenim stable
+    - nhp (formatter)- nimble install nhp
+    - nimlangserver (lsp) - nimble install nimlangserver
+
+TODO: update nu config to only run parts if the required programs are available
+  
