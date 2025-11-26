@@ -6,4 +6,5 @@ HOME/.local/bin/idea-IU-223.8214.52/bin
 HOME/.opam/default/bin
 HOME/.cargo/bin
 HOME/.nimble/bin
+HOME/.bun/bin
 /usr/local/texlive/2024/bin/x86_64-linux
