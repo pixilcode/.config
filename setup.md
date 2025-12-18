@@ -19,6 +19,8 @@
   - just
   - zoxide
   - fzf
+  - vlc
+    - yay -S vlc-plugin-ffmpeg - installs mp4 support
 - optional install:
   - rust
   - ocaml

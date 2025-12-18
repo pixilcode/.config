@@ -11,8 +11,8 @@ font-size=20
 
 # ring location/size
 indicator-radius=150
-indicator-x-position=1640
-indicator-y-position=540
+#indicator-x-position=1640
+#indicator-y-position=540
 
 # ring coloring
 line-uses-ring
