@@ -21,6 +21,7 @@
   - fzf
   - vlc
     - yay -S vlc-plugin-ffmpeg - installs mp4 support
+  - miniserve - `yay -S miniserve`
 - optional install:
   - rust
   - ocaml
