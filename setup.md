@@ -23,6 +23,7 @@
     - yay -S vlc-plugin-ffmpeg - installs mp4 support
   - miniserve - `yay -S miniserve`
 - optional install:
+  - wf-recorder - yay -S wf-recorder
   - rust
   - ocaml
   - bun - curl -fsSL https://bun.com/install | bash
