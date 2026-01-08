@@ -21,14 +21,6 @@ exec swaybg -i ~/Pictures/backgrounds/selected-background
 for_window [shell="xdg_shell"] title_format "%title (%app_id)"
 for_window [shell="x_wayland"] title_format "%class - %title"
 
-# class                 border  bground text    indicator child_border
-client.focused          #6272A4 #6272A4 #F8F8F2 #6272A4   #6272A4
-client.focused_inactive #44475A #44475A #F8F8F2 #44475A   #44475A
-client.unfocused        #282A36 #282A36 #BFBFBF #282A36   #282A36
-client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
-client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
-client.background       #F8F8F2
-
 #
 # Status Bar:
 #
@@ -36,3 +28,36 @@ client.background       #F8F8F2
 bar {
    swaybar_command waybar
 }
+
+### Island River Theme
+#
+# Based on https://www.smashingmagazine.com/files/wallpapers/july-16/island-river/nocal/july-16-island-river-nocal-1920x1080.jpg
+#
+
+    # class                 border  bground text    indicator child_border
+    client.focused          #CC8A28 #FFE0B2 #664514 #CC8A28   #CC8A28
+    client.focused_inactive #CC8A28 #FFB74C #664514 #CC8A28   #CC8A28
+    client.unfocused        #CC8A28 #FFB74C #664514 #CC8A28   #CC8A28
+    client.urgent           #CC3928 #FF8C7F #7F2319 #CC3928   #CC3928
+
+    titlebar_border_thickness 1
+    titlebar_padding 10 4
+#
+###
+
+### Default Theme
+#
+# Based on https://www.smashingmagazine.com/files/wallpapers/july-16/island-river/nocal/july-16-island-river-nocal-1920x1080.jpg
+#
+
+#   # class                 border  bground text    indicator child_border
+#   client.focused          #6272A4 #6272A4 #F8F8F2 #6272A4   #6272A4
+#   client.focused_inactive #44475A #44475A #F8F8F2 #44475A   #44475A
+#   client.unfocused        #282A36 #282A36 #BFBFBF #282A36   #282A36
+#   client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
+#   client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
+#   client.background       #F8F8F2
+
+#
+###
+
