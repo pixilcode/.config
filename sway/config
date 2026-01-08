@@ -8,6 +8,9 @@ set $mod Mod4
 # change the caps lock key to a super key
 input "type:keyboard" xkb_options caps:super
 
+# Always activate num lock by default
+input "type:keyboard" xkb_numlock enabled
+
 # user config directory
 include $HOME/.config/sway/config.d/*
 
