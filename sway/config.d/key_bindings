@@ -1,53 +1,49 @@
-# Logo key. Use Mod1 for Alt.
-set $mod Mod4
-
 # Home row direction keys, like vim
 set $left h
 set $down j
 set $up k
 set $right l
 
-# Your preferred terminal emulators
-set $term-float alacritty -e nu
+bindsym $mod+Shift+O exec notify-send "Hello there"
 
-# Your preferred application launcher
-# Note: pass the final command to swaymsg so that the resulting window can be opened
-# on the original workspace that the command was run on.
-set $menu wofi -c ~/.config/wofi/config -I
+### Application Variables
+#
+#
+#
+    # Your preferred terminal emulators
+    set $term alacritty -e nu
+    
+    # Your preferred application launcher
+	#
+    # Note: pass the final command to swaymsg so that the resulting window can be opened
+    # on the original workspace that the command was run on.
+    set $menu wofi -c ~/.config/wofi/config -I
+    
+    # Set the power menu
+    set $powermenu ~/.config/waybar/scripts/power-menu.sh
 
-set $powermenu ~/.config/waybar/scripts/power-menu.sh
+	# Set the lock screen
+	set $lockscreen ~/.config/sway/scripts/lockman.sh
 
-### Idle configuration
-exec swayidle -w\
-    timeout 1070 'swaylock -f -C ~/.config/swaylock/config'\
-    timeout 770 'swaymsg "output * dpms off"' \
-    resume 'swaymsg "output * dpms on"' \
-    before-sleep 'swaylock -C ~/.config/swaylock/config'
-# This will lock your screen after 300 seconds of inactivity, then turn off
-# your displays after another 300 seconds, and turn your screens back on when
-# resumed. It will also lock your screen before your computer goes to sleep.
-
-## Lock Screen
- bindsym $mod+apostrophe exec ~/.config/sway/scripts/lockman.sh
 
 ### Key bindings
 #
 # Basics:
 #
-    # Start a floating terminal
-    bindsym $mod+Return exec $term-float    
+    # Start a terminal
+    bindsym $mod+Return exec $term    
          
     # Open the power menu
     bindsym $mod+Shift+e exec $powermenu
+
+    # Lock the screen
+    bindsym $mod+apostrophe exec $lockscreen
 
     # Kill focused window
     bindsym $mod+q kill
 
     # Start your launcher
     bindsym $mod+d exec $menu
-    
-    # Activities
-    bindsym $mod+p exec ~/.config/wofi/windows.py
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.

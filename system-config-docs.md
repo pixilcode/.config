@@ -31,6 +31,11 @@ dex --create ... # create an entry
 dex --property ... # get an entry property
 ```
 
+### `fc-list`
+
+List all fonts installed on the system
+
+
 ## Desktop Entries
 
 Desktop entries enable you to add programs to a launcher. See
@@ -103,3 +108,21 @@ automatically run on start up, as defined in `config.d/autostart_applications`.
 ### Running sway commands after config
 
 In order to run sway commands after configuration, use `swaymsg <cmd>`.
+
+### Updating the keyboard configuration
+
+To change which keyboard is being used, update `config.d/input`.
+
+### Configuring screens
+
+To configure screens, update `config.d/input`.
+
+### Discovering what keycode to use for a keybinding
+
+To figure out what name to use for a key, use `wev | grep 'sym'`.
+However, note that not all keys have an associated symbol, especially
+if the keyboard is built for Windows.
+
+### Editing the theme
+
+To edit the theme of sway, update `config.d/theme`.
