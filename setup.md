@@ -1,3 +1,6 @@
+- create a symlink `~/Pictures/backgrounds/selected-background` for
+  the selected wallpaper
+  - `ln <background-of-choice> selected-background`
 - set up Git SSH/GPG
   - `git config --global init.defaultBranch main`
   - setup SSH with texttotypes server

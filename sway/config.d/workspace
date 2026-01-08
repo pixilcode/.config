@@ -1,0 +1,12 @@
+# Start out with tabs in a workspace
+workspace_layout tabbed
+
+# The focus does not follow the mouse
+focus_follows_mouse no
+
+# The window being activated will be focused if it is visible,
+# otherwise it will enter the "urgent" state
+focus_on_window_activation smart
+
+# The focus will wrap when it reaches the edge of a workspace
+focus_wrapping workspace
