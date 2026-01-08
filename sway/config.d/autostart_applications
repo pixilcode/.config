@@ -1,10 +1,15 @@
-# Auth with polkit-gnome:
-exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+# Auth with polkit
+#
+# NOTE: it's important to use the authentication
+#       agent provided by your system. See
+#       https://wiki.archlinux.org/title/Polkit#Authentication_agents
+#       for more details
+exec /usr/lib/polkit-kde-authentication-agent-1
 
 # Desktop notifications
-exec mako
+exec mako --default-timeout=10000
 
-# Network Applet
+# Network Applet - displays network info in the system tray (waybar)
 exec nm-applet --indicator
 
 # GTK3 applications take a long time to start
@@ -13,7 +18,4 @@ exec hash dbus-update-activation-environment 2>/dev/null && \
      dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
      
 # Welcome App
-exec dex -a -s /etc/xdg/autostart/:~/.config/autostart/
-
-# Sway Fader
-exec python3 ~/.config/sway/scripts/swayfader.py
+exec dex --autostart --environment sway --search-paths /etc/xdg/autostart/:~/.config/autostart/

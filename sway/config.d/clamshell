@@ -1,6 +1,12 @@
 # Clamshell Mode
 set $laptop <eDP-1>
+
+# when the laptop is closed, disable the screen
 bindswitch --reload --locked lid:on output $laptop disable
+
+# when the laptop is open, enable the screen
 bindswitch --reload --locked lid:off output $laptop enable
 
+# when config runs, enable/disable screen based on
+# the current state of the lid
 exec_always ~/.config/sway/scripts/clamshell.sh

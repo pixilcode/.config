@@ -5,6 +5,9 @@
 - download .config
 - setup screenshot for sway
   - `~/.config/sway/scripts/grimshot check`
+- ensure that you have the correct polkit authentication agent
+  (see `.config/sway/config.d/autostart_applications` for more
+  details)
 - install `pandoc`
   - `yay -S pandoc-cli`
   - install texlive
