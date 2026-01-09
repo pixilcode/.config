@@ -126,3 +126,9 @@ if the keyboard is built for Windows.
 ### Editing the theme
 
 To edit the theme of sway, update `config.d/theme`.
+
+### Waybar configuration
+
+The sway configuration uses `waybar` as defined in `config.d/theme`.
+
+For details on configuring waybar, see <https://github.com/Alexays/Waybar/wiki/Configuration>.
