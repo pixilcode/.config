@@ -1,10 +1,14 @@
 // Global
 {
+  // STYLING
   "layer": "top",
   "position": "top",
-  // If height property would be not present, it'd be calculated dynamically
-  "height": 30,
-  // "width" : 10, // waybar width
+
+  "height": 30, // height of the waybar
+  "margin": 5, // margin around the waybar
+  "spacing": 6, // spacing between modules
+
+  // MODULE ARRANGEMENT
 
   "modules-left": ["clock", "sway/workspaces", "sway/mode"],
 
@@ -23,7 +27,7 @@
     "custom/power",
   ],
 
-  // Modules
+  // MODULES
 
   "idle_inhibitor": {
     "format": "{icon} ",
@@ -50,7 +54,7 @@
   "clock": {
     "interval": 10,
     "format-alt": "{:%e %b %Y}", // Icon: calendar-alt
-    "format": "{:%H:%M}",
+    "format": " {:%e %b %Y    %H:%M}",
     "tooltip-format": "{:%e %B %Y}",
   },
 
