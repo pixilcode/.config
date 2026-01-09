@@ -35,9 +35,9 @@ bar {
 #
 
     # class                 border  bground text    indicator child_border
-    client.focused          #CC8A28 #FFE0B2 #664514 #CC8A28   #CC8A28
-    client.focused_inactive #CC8A28 #FFB74C #664514 #CC8A28   #CC8A28
-    client.unfocused        #CC8A28 #FFB74C #664514 #CC8A28   #CC8A28
+    client.focused          #CC8A28 #FFB74C #664514 #CC8A28   #CC8A28
+    client.focused_inactive #CC8A28 #FFE0B2 #664514 #CC8A28   #CC8A28
+    client.unfocused        #CC8A28 #FFE0B2 #664514 #CC8A28   #CC8A28
     client.urgent           #CC3928 #FF8C7F #7F2319 #CC3928   #CC3928
 
     titlebar_border_thickness 1
