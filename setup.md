@@ -1,3 +1,4 @@
+- update `~/.bashrc` (or similar file) to source `~/.config/profile`
 - create a symlink `~/Pictures/backgrounds/selected-background` for
   the selected wallpaper
   - `ln <background-of-choice> selected-background`
