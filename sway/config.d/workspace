@@ -1,5 +1,5 @@
 # Start out with tabs in a workspace
-workspace_layout tabbed
+#workspace_layout tabbed
 
 # The focus does not follow the mouse
 focus_follows_mouse no
