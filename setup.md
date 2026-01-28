@@ -33,6 +33,8 @@
   - wf-recorder - yay -S wf-recorder
   - rust
   - ocaml
+    - yay -S opam
+    - opam install dune ocaml-lsp-server odoc ocamlformat utop
   - bun - curl -fsSL https://bun.com/install | bash
   - nim - yay -S choosenim-bin; choosenim stable
     - nhp (formatter)- nimble install nhp

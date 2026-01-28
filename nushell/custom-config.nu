@@ -16,34 +16,36 @@ alias cat = bat
 # A post-modern text editor
 alias hx = helix
 
-# Get the location of a class with the given name
-def class [name: string] {
-    $"($env.HOME)/Documents/classes/($name)"
-}
-
-# List all classes
-def 'class list' [] {
-    ls $"($env.HOME)/Documents/classes"
-    | get name
-    | path basename
-}
-
-# Get a class by it's ID (based on `class list`)
-def 'class id' [id: int] {
-    let class = (class list | select $id | get 0);
-    class $class
-}
-
-def cs260server [] {
+def ttt-server [] {
   "brendonb@64.227.6.254"
 }
 
-def cslab [] {
-  "bhb49@moat.cs.byu.edu"
+def command-exists [command: string, ...args: string] {
+    do --ignore-errors {
+        # try and run the command
+        run-external $command ...$args | ignore;
+
+        # return true if it succeeds
+        true
+    }
+    # return false if it does not
+    | default false
 }
 
-# Run `opam env` and convert it to a record
-def opam-env [] {
+def ocaml-new [project_name: string] {
+    dune init proj $project_name
+    cd $project_name
+    opam switch create .
+
+    print "Created! Don't forget to run `opam-env` to activate the switch."
+}
+
+# Load `opam env` into the environment
+def --env opam-env [] {
+    if not (command-exists "opam" "--version") {
+        return
+    }
+
     opam env
     | split row ';'
     | str trim
@@ -51,14 +53,21 @@ def opam-env [] {
     | split column '='
     | rename key value
     | each { |row|
-        let value = ($row.value | str trim --char "'")
+        let value = if $row.key == "PATH" {
+                # split the string into a list of paths
+                ($row.value | str trim --char "'" | split row ":")
+            } else {
+                ($row.value | str trim --char "'")
+            }
+
         { $row.key: $value }
     }
     | reduce { |row, result| $result | merge $row }
+    | load-env
 }
 
 # Load the opam environment
-# opam-env | load-env
+opam-env
 
 $env.config = (
     $env.config
