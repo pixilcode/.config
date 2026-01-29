@@ -39,6 +39,7 @@
   - nim - yay -S choosenim-bin; choosenim stable
     - nhp (formatter)- nimble install nhp
     - nimlangserver (lsp) - nimble install nimlangserver
+  - gleam - yay -S gleam
 
 TODO: update nu config to only run parts if the required programs are available
   
