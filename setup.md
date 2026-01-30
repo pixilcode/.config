@@ -40,6 +40,7 @@
     - nhp (formatter)- nimble install nhp
     - nimlangserver (lsp) - nimble install nimlangserver
   - gleam - yay -S gleam
+  - elm - yay -S elm-bin
 
 TODO: update nu config to only run parts if the required programs are available
   
