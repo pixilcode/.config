@@ -7,4 +7,5 @@ HOME/.opam/default/bin
 HOME/.cargo/bin
 HOME/.nimble/bin
 HOME/.bun/bin
+HOME/.npm-global/bin
 /usr/local/texlive/2024/bin/x86_64-linux
