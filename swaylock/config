@@ -1,9 +1,9 @@
 indicator-caps-lock
 
 # background
-image=/usr/share/endeavouros/backgrounds/endeavouros-wallpaper.png
+image=~/Pictures/backgrounds/selected-lock-screen
 scaling=fill
-color=#57477f
+color=#91cfdf
 
 # message text
 font=NotoSans
@@ -11,20 +11,29 @@ font-size=20
 
 # ring location/size
 indicator-radius=150
-#indicator-x-position=1640
-#indicator-y-position=540
+indicator-x-position=300
+indicator-y-position=300
 
 # ring coloring
 line-uses-ring
-#line-color=#3b4252
 text-color=#d8dee9
-inside-color=#2e344098
-inside-ver-color=#5e81ac
-line-ver-color=#5e81ac
-ring-ver-color=#5e81ac98
-ring-color=#4c566a
-key-hl-color=#5e81ac
 
-separator-color=#4c566a
+# regular
+ring-color=#4c8999
+inside-color=#99eaff
+separator-color=#335b66
+key-hl-color=#335b66
+bs-hl-color=#4c3b00
+
+# verification
+ring-ver-color=#4c8999
+inside-ver-color=#5e81ac
+
+# wrong
+ring-wrong-color=#bfa239
+inside-wrong-color=#ffe37f
+
+# TODO: clear
+#ring-clear-color=
+
 layout-text-color=#eceff4
-line-wrong-color=#d08770
