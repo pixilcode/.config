@@ -12,6 +12,11 @@
 - ensure that you have the correct polkit authentication agent
   (see `.config/sway/config.d/autostart_applications` for more
   details)
+- install `cups` for printing
+  - `yay -S cups`
+  - `systemctl enable cups`
+  - `systemctl start cups`
+  - See <https://wiki.archlinux.org/title/CUPS>
 - install `pandoc`
   - `yay -S pandoc-cli`
   - install texlive
