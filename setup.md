@@ -39,6 +39,8 @@
     - yay -S vlc-plugin-ffmpeg - installs mp4 support
   - miniserve - `yay -S miniserve`
 - optional install:
+  - taplo (TOML linting)
+    - cargo install taplo-cli
   - npm
     - don't forget to run `mkdir ~/.npm-global; npm config set prefix '~/.npm-global'`
   - wf-recorder - yay -S wf-recorder
