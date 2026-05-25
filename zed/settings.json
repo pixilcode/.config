@@ -12,7 +12,14 @@
     "light": "One Light",
     "dark": "One Dark"
   },
-  "agent_servers": {},
+  "agent_servers": {
+    "opencode": {
+      "type": "registry"
+    },
+    "github-copilot": {
+      "type": "registry"
+    }
+  },
   "agent": {
     "dock": "left",
     "default_width": 600,
@@ -34,6 +41,7 @@
     "dock": "right"
   },
   "collaboration_panel": {
+    "dock": "left",
     "button": false
   },
   "git_panel": {

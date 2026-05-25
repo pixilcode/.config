@@ -19,8 +19,12 @@
   - See <https://wiki.archlinux.org/title/CUPS>
 - install `pandoc`
   - `yay -S pandoc-cli`
-  - install texlive
-    - `yay -S texlive-bin texlive-latexrecommended texlive-fontsrecommended`
+- install texlive
+  - `yay -S texlive-bin texlive-latexrecommended texlive-fontsrecommended`
+- install fin-plan
+  - clone from github into `.local/share`
+  - soft link from `.local/share` to `.local/bin`
+  - copy `~/.fin-plan/config.nu` from previous computer
 - install:
   - nushell
   - helix
@@ -48,6 +52,7 @@
     - nimlangserver (lsp) - nimble install nimlangserver
   - gleam - yay -S gleam
   - elm - yay -S elm-bin
+  - opencode - `curl -fsSL https://opencode.ai/install | bash`
 
 TODO: update nu config to only run parts if the required programs are available
   
