@@ -8,6 +8,7 @@ alias grep = rg
 #alias fd = findfd
 
 # Search for a file
+alias find-core = find
 alias find = fd
 
 # Read a file to the console

@@ -7,6 +7,12 @@
 // custom settings, run `zed: open default settings` from the
 // command palette
 {
+  "edit_predictions": {
+    "ollama": {
+      "model": "gpt-oss:20b"
+    },
+    "provider": "ollama"
+  },
   "theme": {
     "mode": "system",
     "light": "One Light",
@@ -15,12 +21,14 @@
   "agent_servers": {
     "opencode": {
       "type": "registry"
-    },
-    "github-copilot": {
-      "type": "registry"
     }
   },
   "agent": {
+    "default_model": {
+      "provider": "ollama",
+      "model": "gpt-oss:20b",
+      "enable_thinking": true
+    },
     "dock": "left",
     "default_width": 600,
     "play_sound_when_agent_done": true
