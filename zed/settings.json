@@ -19,6 +19,7 @@
     },
     "provider": "ollama"
   },
+  "cli_default_open_behavior": "new_window",
   "theme": {
     "mode": "light",
     "light": "One Light",
@@ -91,6 +92,13 @@
           }
         ]
       }
+    },
+    "deno": {
+      "settings": {
+        "deno": {
+          "enable": true
+        }
+      }
     }
   },
   "languages": {
@@ -101,6 +109,33 @@
           "arguments": ["-"]
         }
       }
+    },
+    "JavaScript": {
+      "language_servers": [
+        "deno",
+        "!typescript-language-server",
+        "!vtsls",
+        "!eslint"
+      ],
+      "formatter": "language_server"
+    },
+    "TypeScript": {
+      "language_servers": [
+        "deno",
+        "!typescript-language-server",
+        "!vtsls",
+        "!eslint"
+      ],
+      "formatter": "language_server"
+    },
+    "TSX": {
+      "language_servers": [
+        "deno",
+        "!typescript-language-server",
+        "!vtsls",
+        "!eslint"
+      ],
+      "formatter": "language_server"
     }
   }
 }
