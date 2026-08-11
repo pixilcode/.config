@@ -13,9 +13,9 @@ exec mako --default-timeout=10000
 exec nm-applet --indicator
 
 # GTK3 applications take a long time to start
-exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
+exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP
 exec hash dbus-update-activation-environment 2>/dev/null && \
-     dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
+     dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP XDG_CURRENT_DESKTOP=sway
      
 # Welcome App
 exec dex --autostart --environment sway --search-paths /etc/xdg/autostart/:~/.config/autostart/

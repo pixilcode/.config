@@ -7,6 +7,12 @@
 // custom settings, run `zed: open default settings` from the
 // command palette
 {
+  "icon_theme": {
+    "mode": "light",
+    "light": "Zed (Default)",
+    "dark": "Zed (Default)"
+  },
+  "cli_default_open_behavior": "new_window",
   "edit_predictions": {
     "ollama": {
       "model": "gpt-oss:20b"
@@ -14,7 +20,7 @@
     "provider": "ollama"
   },
   "theme": {
-    "mode": "system",
+    "mode": "light",
     "light": "One Light",
     "dark": "One Dark"
   },
@@ -31,7 +37,7 @@
     },
     "dock": "left",
     "default_width": 600,
-    "play_sound_when_agent_done": true
+    "play_sound_when_agent_done": "always"
   },
   "minimap": {
     "show": "auto"
