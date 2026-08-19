@@ -13,33 +13,33 @@
 Arc-Dark Color Scheme
 */
 
-@define-color highlight #5294e2 ;
-@define-color base1  #404552 ;
+@define-color highlight #FFFFFF ;
+@define-color base  #78021C ;
+@define-color base-special #FFFFFF ;
+@define-color text #FFFFFF ;
+ 
+ 
+@keyframes blink {
+    from {
+      color: @text;
+      background-color: @base;
+    }
 
- 
- 
-@keyframes blink-warning {
-    70% {
-        color: white;
+    25% {
+      color: @text;
+      background-color: @base;
     }
- 
+
+    75% {
+        color: @base;
+        background-color: @text;
+    }
+
     to {
-        color: white;
-        background-color: orange;
+        color: @base;
+        background-color: @text;
     }
 }
- 
-@keyframes blink-critical {
-    70% {
-      color: white;
-    }
- 
-    to {
-        color: white;
-        background-color: red;
-    }
-}
- 
  
 /* -----------------------------------------------------------------------------
  * Base styles
@@ -57,8 +57,8 @@ Arc-Dark Color Scheme
 /* The whole bar */
 #waybar {
     background: transparent;
-    color: #bebebe;
-    background-color: @base1;
+    color: @text;
+    background-color: @base;
     font-family: UbuntuMono;
     font-size: 14px;
 }
@@ -96,33 +96,36 @@ Arc-Dark Color Scheme
         animation-direction: alternate;
 }
  
-#battery.warning {
-        color: orange;
-}
- 
-#battery.critical {
-        color: red;
+#battery.warning, #battery.critical, #battery.full {
+  color: @base;
+  background: @text;
 }
  
 #battery.warning.discharging {
-        animation-name: blink-warning;
+        animation-name: blink;
         animation-duration: 3s;
 }
  
 #battery.critical.discharging {
-        animation-name: blink-critical;
-        animation-duration: 2s;
+        animation-name: blink;
+        animation-duration: 1s;
 }
 
 #cpu{
  
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
 }
+
 #cpu.warning {
-        color: orange;
+        animation-name: blink;
+        animation-duration: 3s;
 }
  
 #cpu.critical {
-        color: red;
+        animation-name: blink;
+        animation-duration: 1s;
 }
  
 #memory {
@@ -132,13 +135,15 @@ Arc-Dark Color Scheme
 }
  
 #memory.warning {
-        color: orange;
+        animation-name: blink;
+        animation-duration: 3s;
+        padding-left:5px;
+        padding-right:5px;
  }
  
 #memory.critical {
-        color: red;
-        animation-name: blink-critical;
-        animation-duration: 2s;
+        animation-name: blink;
+        animation-duration: 1s;
         padding-left:5px;
         padding-right:5px;
 }
@@ -152,7 +157,8 @@ Arc-Dark Color Scheme
   }
  
 #network.disconnected {
-        color: orange;
+  color: @base;
+  background: @text;
 }
 
 #pulseaudio{
@@ -163,7 +169,12 @@ padding-top:6px;
 }
  
 #temperature.critical {
-        color: red;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  
+  animation-name: blink;
+  animation-duration: 1s;
 }
  
 #window {
@@ -196,11 +207,17 @@ font-size:13px;
    margin-right:15px;
    font-size:15px;
 }   
+
 #custom-launcher{
    font-size:15px;
    margin-left:15px;
    margin-right:10px;
- }   
+}   
+
+#tray{
+  background-color:@base-special;
+  border-radius:2px;
+}
 
 #backlight.icon{
  padding-right:1px;
