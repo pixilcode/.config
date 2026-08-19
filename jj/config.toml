@@ -2,7 +2,7 @@
 
 [user]
 name = "Brendon Bown"
-email = "brendon.bown@pm.me"
+email = "bown.23@osu.edu"
 
 [ui]
 diff-editor = ":builtin"
@@ -10,11 +10,10 @@ diff-editor = ":builtin"
 [ui.movement]
 edit = true
 
-# uncomment when GPG is set up
-#[revsets]
-#git-sign-on-push = "~signed() & mine()"
-#
-#[signing]
-#backend = "gpg"
-#key = "7D4E16BD6B75865D"
-#behavior = "own"
+[revsets]
+git-sign-on-push = "~signed() & mine()"
+
+[signing]
+backend = "gpg"
+key = "5FEF928D15C6B8A6"
+behavior = "own"
