@@ -2,7 +2,7 @@
 
 [user]
 name = "Brendon Bown"
-email = "brendon@careweather.com"
+email = "bown.23@osu.edu"
 
 [ui]
 diff-editor = ":builtin"
@@ -15,5 +15,5 @@ sign-on-push = true
 
 [signing]
 backend = "gpg"
-key = "7D4E16BD6B75865D"
+key = "5FEF928D15C6B8A6"
 behavior = "own"
