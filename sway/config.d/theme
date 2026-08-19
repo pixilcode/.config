@@ -34,20 +34,38 @@ bar {
 # Based on https://www.smashingmagazine.com/files/wallpapers/july-16/island-river/nocal/july-16-island-river-nocal-1920x1080.jpg
 #
 
-    # class                 border  bground text    indicator child_border
-    client.focused          #CC8A28 #FFB74C #664514 #CC8A28   #CC8A28
-    client.focused_inactive #CC8A28 #FFE0B2 #664514 #CC8A28   #CC8A28
-    client.unfocused        #CC8A28 #FFE0B2 #664514 #CC8A28   #CC8A28
-    client.urgent           #CC3928 #FF8C7F #7F2319 #CC3928   #CC3928
+#   # class                 border  bground text    indicator child_border
+#   client.focused          #CC8A28 #FFB74C #664514 #CC8A28   #CC8A28
+#   client.focused_inactive #CC8A28 #FFE0B2 #664514 #CC8A28   #CC8A28
+#   client.unfocused        #CC8A28 #FFE0B2 #664514 #CC8A28   #CC8A28
+#   client.urgent           #CC3928 #FF8C7F #7F2319 #CC3928   #CC3928
+#
+#   titlebar_border_thickness 1
+#   titlebar_padding 10 4
 
-    titlebar_border_thickness 1
-    titlebar_padding 10 4
+#
+###
+
+### Buckeye Theme
+#
+# Based on OSU colors
+#
+
+    # class                 border  bground text    indicator child_border
+    client.focused          #BC042B #BC042B #FFFFFF #BC042B   #BC042B
+    client.focused_inactive #BC042B #FFFFFF #BC042B #BC042B   #BC042B
+    client.unfocused        #BC042B #FFFFFF #BC042B #BC042B   #BC042B
+    client.urgent           #BC042B #FDD8E2 #BC042B #BC042B   #BC042B
+ 
+    titlebar_border_thickness 2
+    titlebar_padding 9 3
+
 #
 ###
 
 ### Default Theme
 #
-# Based on https://www.smashingmagazine.com/files/wallpapers/july-16/island-river/nocal/july-16-island-river-nocal-1920x1080.jpg
+# Original Sway theme
 #
 
 #   # class                 border  bground text    indicator child_border
