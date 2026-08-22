@@ -1,3 +1,6 @@
+# export the `utils` tool
+export use utils.nu
+
 # Open the neovim editor
 alias v = nvim
 
