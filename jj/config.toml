@@ -10,11 +10,10 @@ diff-editor = ":builtin"
 [ui.movement]
 edit = true
 
-# uncomment when GPG is set up
-#[revsets]
-#git-sign-on-push = "~signed() & mine()"
-#
-#[signing]
-#backend = "gpg"
-#key = "7D4E16BD6B75865D"
-#behavior = "own"
+[revsets]
+git-sign-on-push = "~signed() & mine()"
+
+[signing]
+backend = "gpg"
+key = "0C1A702FB630C762"
+behavior = "own"
