@@ -8,6 +8,19 @@
 // command palette
 {
   "format_on_save": "on",
+  "ssh_connections": [
+    {
+      "host": "osu",
+      "args": [],
+      "projects": [
+        {
+          "paths": [
+            "/home/bown.23/cse6341/proj-0"
+          ]
+        }
+      ]
+    }
+  ],
   "icon_theme": {
     "mode": "light",
     "light": "Zed (Default)",
@@ -26,6 +39,12 @@
     "dark": "One Dark"
   },
   "agent_servers": {
+    "codex-acp": {
+      "default_config_options": {
+        "reasoning_effort": "high"
+      },
+      "type": "registry"
+    },
     "opencode": {
       "type": "registry"
     }
