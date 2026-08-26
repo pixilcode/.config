@@ -111,6 +111,7 @@ arkrc
 baloofileinformationrc
 chromium/
 jj/repos/
+jj/workspaces/
 Bitwarden CLI/
 MuseScore/
 QtProject/
@@ -130,3 +131,12 @@ servo/
 spectaclerc
 showfotorc
 showfoto_systemrc
+FortiClient/
+cagent/.cagent_first_run
+cagent/user-uuid
+emaildefaults
+kaccessrc
+systemmonitorrc
+welcome-first-run-done
+welcome.conf
+zed/settings.json

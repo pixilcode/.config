@@ -55,6 +55,8 @@
   - gleam - yay -S gleam
   - elm - yay -S elm-bin
   - opencode - `curl -fsSL https://opencode.ai/install | bash`
+  - kio audiocd - `yay -S audiocd-kio`
+    - for reading CDs/DVDs
 
 TODO: update nu config to only run parts if the required programs are available
   

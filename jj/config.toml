@@ -11,8 +11,8 @@ diff-editor = ":builtin"
 edit = true
 
 # uncomment when GPG is set up
-#[git]
-#sign-on-push = true
+#[revsets]
+#git-sign-on-push = "~signed() & mine()"
 #
 #[signing]
 #backend = "gpg"
